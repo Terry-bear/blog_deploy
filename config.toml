@@ -27,7 +27,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
-git@github.com:t496971418/blog_deploy.git
+
 [[menu.main]]             # config your menu              # 配置目录
   name = "Home"
   weight = 10

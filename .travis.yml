@@ -3,7 +3,7 @@ sudo: false
 dist: trusty
 
 go:
-    - 1.9.2
+    - 1.x
 
 git:
     depth: 10
