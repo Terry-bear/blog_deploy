@@ -1,0 +1,26 @@
+language: go
+sudo: false
+dist: trusty
+
+go:
+    - 1.9.2
+
+git:
+    depth: 10
+
+# addons:
+    # ssh_known_hosts: git.coding.net
+
+install:
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz
+    - tar -xzvf hugo_0.54.0_Linux-64bit.tar.gz
+
+script:
+    - ./hugo
+
+deploy:
+    provider: script
+    script: sh CI/deploy.sh
+    skip_cleanup: true
+    on:
+        branch: master
