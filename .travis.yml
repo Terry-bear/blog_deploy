@@ -8,8 +8,8 @@ go:
 git:
     depth: 10
 
-# addons:
-    # ssh_known_hosts: git.coding.net
+addons:
+    ssh_known_hosts: github.com
 
 install:
     - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz
