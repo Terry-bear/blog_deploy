@@ -1,6 +1,6 @@
 #!/bin/bash
 # deploy
-openssl aes-256-cbc -K $encrypted_1ddk1199d526_key -iv $encrypted_1ddk1199d526_iv -in CI/id_rsa.enc -out ~/.ssh/id_rsa -d
+openssl aes-256-cbc -K $encrypted_2da8cfd5de4c_key -iv $encrypted_2da8cfd5de4c_iv -in CI/id_rsa.enc -out ~/.ssh/id_rsa -d
 chmod 600 ~/.ssh/id_rsa
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_rsa
