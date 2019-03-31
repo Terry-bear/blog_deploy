@@ -2,3 +2,4 @@
 /themes/even/node_modules
 /themes/even/static/*.min.js.map
 /themes/even/static/*.min.css.map
+/public/
