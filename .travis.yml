@@ -1,26 +1,29 @@
 language: go
 sudo: false
 dist: trusty
-
 go:
-    - 1.x
-
+- 1.x
 git:
-    depth: 10
-
+  depth: 10
 addons:
-    ssh_known_hosts: github.com
-
+  ssh_known_hosts:
+  - 39.104.123.222
+  - github.com
+before_install:
+- openssl aes-256-cbc -K $encrypted_2da8cfd5de4c_key -iv $encrypted_2da8cfd5de4c_iv
+  -in CI/deploy_rsa.enc -out ~/.ssh/deploy_rsa -d
 install:
-    - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz
-    - tar -xzvf hugo_0.54.0_Linux-64bit.tar.gz
-
+- wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz
+- tar -xzvf hugo_0.54.0_Linux-64bit.tar.gz
 script:
-    - ./hugo
-
+- "./hugo"
+before_deploy:
+- eval "$(ssh-agent -s)"
+- chmod 600 ~/.ssh/deploy_rsa
+- ssh-add ~/.ssh/deploy_rsa
 deploy:
-    provider: script
-    script: sh CI/deploy.sh
-    skip_cleanup: true
-    on:
-        branch: master
+  provider: script
+  script: sh CI/deploy.sh
+  skip_cleanup: true
+  on:
+    branch: master

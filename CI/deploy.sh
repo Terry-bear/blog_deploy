@@ -12,3 +12,8 @@ cp -R ../public/* .
 git add .
 git commit -m "[Ops]Travis built blog"
 git push origin master
+
+ssh -i ~/.ssh/deploy_rsa root@39.104.123.222
+pwd
+ls
+
