@@ -17,6 +17,6 @@ git push origin master
 
 # upload master server
 echo $IP
-ssh -i ~/.ssh/server root@$IP
+ssh -i ~/.ssh/server -o StrictHostKeyChecking=no root@$IP
 pwd
 ls
