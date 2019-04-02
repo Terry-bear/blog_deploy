@@ -1,6 +1,8 @@
 #!/bin/bash
 # deploy
-openssl aes-256-cbc -K $encrypted_e206ebe4192c_key -iv $encrypted_e206ebe4192c_iv -in CI/id_rsa.enc -out ~/.ssh/id_rsa -d
+openssl aes-256-cbc -K $encrypted_e206ebe4192c_key -iv $encrypted_e206ebe4192c_iv -in CI/secrets.tar -out ~/.ssh/secrets.tar -d
+tar xvf ~/.ssh/secrets.tar
+chmod 600 ~/.ssh/server
 chmod 600 ~/.ssh/id_rsa
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_rsa
@@ -13,6 +15,8 @@ git add .
 git commit -m "[Ops]Travis built blog"
 git push origin master
 
-# ssh -i ~/.ssh/deploy_rsa root@39.104.123.222
-# pwd
-# ls
+# upload master server
+echo $IP
+ssh -i ~/.ssh/server root@$IP
+pwd
+ls
