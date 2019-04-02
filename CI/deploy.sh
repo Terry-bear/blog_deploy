@@ -1,6 +1,6 @@
 #!/bin/bash
 # deploy
-openssl aes-256-cbc -K $encrypted_e206ebe4192c_key -iv $encrypted_e206ebe4192c_iv -in CI/secrets.tar -out ~/.ssh/secrets.tar -d
+openssl aes-256-cbc -K $encrypted_e206ebe4192c_key -iv $encrypted_e206ebe4192c_iv -in CI/secrets.tar.enc -out ~/.ssh/secrets.tar -d
 tar xvf ~/.ssh/secrets.tar
 chmod 600 ~/.ssh/server
 chmod 600 ~/.ssh/id_rsa
