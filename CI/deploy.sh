@@ -17,10 +17,13 @@ git commit -m "[Ops]Travis built blog"
 git push origin master
 
 # upload master server
+sudo apt-get install sshpass
 cat ~/.ssh/server.pub > ~/.ssh/authorized_keys
 cd ..
 ls -lrt ~/.ssh
 chmod 777 my_blog
-ssh -o StrictHostKeyChecking=no root@39.104.123.222
-ls
+sshpass -p $SPW ssh -o StrictHostKeyChecking=no -p root@39.104.123.222
+ls -lrt
+cd /var/www/html
+git pull
 exit 0
