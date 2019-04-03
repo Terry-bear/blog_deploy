@@ -31,7 +31,7 @@ git push origin master
 cat ~/.ssh/config
 ssh-add ~/.ssh/server
 cd ..
-ll -a
+ls -lrt
 chmod 766 my_blog
 # scp -o StrictHostKeyChecking=no -r my_blog/*  root@$IP:/var/www/html
 exit 0
