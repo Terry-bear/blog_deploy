@@ -5,7 +5,7 @@ tar xvf ~/.ssh/secrets.tar -C ~/.ssh
 chmod 600 ~/.ssh/server
 chmod 600 ~/.ssh/id_rsa
 pwd
-cat <<EOF > ~/.ssh/config  
+cat <<EOF > /home/travis/.ssh/config  
 Host github.com
 User 496971418@qq.com
 PreferredAuthentications publickey
@@ -15,7 +15,7 @@ Host $IP
 User terryzh
 PreferredAuthentications publickey
 IdentityFile ~/.ssh/server
-EOF 
+EOF
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_rsa
 git config --global user.name "terryzh"
