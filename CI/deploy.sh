@@ -20,12 +20,7 @@ git push origin master
 
 cat ~/.ssh/server.pub > ~/.ssh/authorized_keys
 cd ..
+pwd
 ls -lrt ~/.ssh
-cat ~/.ssh/authorized_keys
-cat ~/.ssh/config
-chmod 777 my_blog
-sshpass -p $SPW ssh root@$IP
-ls -lrt
-cd /var/www/html
-git pull
+sshpass -p $SPW scp -o stricthostkeychecking=no -r ./public/* root@$IP:/root
 exit 0
