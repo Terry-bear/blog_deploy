@@ -22,7 +22,7 @@ cat ~/.ssh/server.pub > ~/.ssh/authorized_keys
 cd ..
 ls -lrt ~/.ssh
 chmod 777 my_blog
-sshpass -p $SPW ssh -o StrictHostKeyChecking=no -p root@39.104.123.222
+sshpass -p $SPW ssh root@$IP
 ls -lrt
 cd /var/www/html
 git pull
