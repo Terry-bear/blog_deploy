@@ -4,7 +4,7 @@ openssl aes-256-cbc -K $encrypted_e206ebe4192c_key -iv $encrypted_e206ebe4192c_i
 tar xvf ~/.ssh/secrets.tar -C ~/.ssh
 chmod 600 ~/.ssh/server
 chmod 600 ~/.ssh/id_rsa
-cat > ~/.ssh/config  <<EOF
+cat <<EOF > ~/.ssh/config  
 Host github.com
 User 496971418@qq.com
 PreferredAuthentications publickey
