@@ -21,6 +21,8 @@ git push origin master
 cat ~/.ssh/server.pub > ~/.ssh/authorized_keys
 cd ..
 ls -lrt ~/.ssh
+cat ~/.ssh/authorized_keys
+cat ~/.ssh/config
 chmod 777 my_blog
 sshpass -p $SPW ssh root@$IP
 ls -lrt
