@@ -19,7 +19,7 @@ git push origin master
 # upload master server
 cat ~/.ssh/server.pub > ~/.ssh/authorized_keys
 cd ..
-ls -lrt
+ls -lrt ~/.ssh
 chmod 777 my_blog
 ssh -o StrictHostKeyChecking=no root@39.104.123.222
 ls
