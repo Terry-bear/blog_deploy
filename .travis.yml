@@ -16,7 +16,7 @@ script:
 - "./hugo"
 deploy:
   provider: script
-  script: sh CI/deploy.sh
+  script: sh -x CI/deploy.sh
   skip_cleanup: true
   on:
     branch: master
