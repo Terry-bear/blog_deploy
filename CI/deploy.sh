@@ -17,7 +17,7 @@ git commit -m "[Ops]Travis built blog"
 git push origin master
 
 # upload master server
-sudo apt-get install sshpass
+
 cat ~/.ssh/server.pub > ~/.ssh/authorized_keys
 cd ..
 ls -lrt ~/.ssh
