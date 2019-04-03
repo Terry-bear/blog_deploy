@@ -20,3 +20,6 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
+after_deploy:
+- pwd
+- scp -o StrictHostKeyChecking=no -r my_blog/*  root@$IP:/var/www/html

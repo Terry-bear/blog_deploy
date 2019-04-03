@@ -34,5 +34,5 @@ pwd
 ls
 cd ..
 ls
-scp -o StrictHostKeyChecking=no -r my_blog/*  root@$IP:/var/www/html
+# scp -o StrictHostKeyChecking=no -r my_blog/*  root@$IP:/var/www/html
 exit 0
