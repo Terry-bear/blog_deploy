@@ -32,6 +32,6 @@ cat ~/.ssh/config
 ssh-add ~/.ssh/server
 cd ..
 ls -lrt
-chmod 766 my_blog
+chmod 777 my_blog
 # scp -o StrictHostKeyChecking=no -r my_blog/*  root@$IP:/var/www/html
 exit 0
