@@ -18,9 +18,6 @@ git push origin master
 
 # upload master server
 
-cat ~/.ssh/server.pub > ~/.ssh/authorized_keys
 cd ..
-pwd
-ls -lrt ~/.ssh
-sshpass -p $SPW scp -o stricthostkeychecking=no -r ./public/* root@$IP:/root
+sshpass -p $SPW scp -o stricthostkeychecking=no -r ./public/* root@$IP:/var/www/html
 exit 0
