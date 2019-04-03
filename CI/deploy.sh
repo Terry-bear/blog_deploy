@@ -29,6 +29,9 @@ git push origin master
 
 # upload master server
 cat ~/.ssh/config
+ssh-add ~/.ssh/server
 cd ..
-scp -o StrictHostKeyChecking=no -r my_blog/  root@$IP:/var/www/html
+pwd
+ls my_blog/public
+scp -o StrictHostKeyChecking=no -r my_blog/public/*  root@$IP:/var/www/html
 exit 0
