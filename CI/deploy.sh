@@ -21,6 +21,6 @@ cat ~/.ssh/server.pub > ~/.ssh/authorized_keys
 cd ..
 ls -lrt
 chmod 777 my_blog
-ssh root@39.104.123.222
+ssh -o StrictHostKeyChecking=no root@39.104.123.222
 ls
 exit 0
