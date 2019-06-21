@@ -19,5 +19,5 @@ git push origin master
 # upload master server
 
 cd ..
-sshpass -p $SPW scp -o stricthostkeychecking=no -r ./public/* root@$IP:/var/www/html
+sshpass -p $SPW scp -o stricthostkeychecking=no -r ./public/* root@$IP:/usr/local/nginx/html
 exit 0
