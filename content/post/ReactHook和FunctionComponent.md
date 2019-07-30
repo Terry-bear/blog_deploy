@@ -31,13 +31,13 @@ React 生命周期很多人都了解，但通常我们所了解的都是 **单�
 
 - `constructor`：函数组件不需要构造函数，我们可以通过调用 **useState 来初始化 state**。如果计算的代价比较昂贵，也可以传一个函数给 `useState`。
 
-  ```
+  ```jsx
   const [num, UpdateNum] = useState(0)
   ```
 
 - `getDerivedStateFromProps`：一般情况下，我们不需要使用它，我们可以在**渲染过程中更新 state**，以达到实现 `getDerivedStateFromProps` 的目的。
 
-  ```
+  ```jsx
   function ScrollView({row}) {
   let [isScrollingDown, setIsScrollingDown] = useState(false);
   let [prevRow, setPrevRow] = useState(null);
@@ -56,7 +56,7 @@ React 生命周期很多人都了解，但通常我们所了解的都是 **单�
 
 - `shouldComponentUpdate`：可以用 **React.memo** 包裹一个组件来对它的 `props` 进行浅比较
 
-  ```
+  ```jsx
   const Button = React.memo((props) => {
   // 具体的组件
   });
@@ -68,18 +68,18 @@ React 生命周期很多人都了解，但通常我们所了解的都是 **单�
 
 - `componentDidMount`, `componentDidUpdate`：`useLayoutEffect` 与它们两的调用阶段是一样的。但是，我们推荐你**一开始先用 useEffect**，只有当它出问题的时候再尝试使用 `useLayoutEffect`。`useEffect` 可以表达所有这些的组合。
 
-  ```
+  ```jsx
   // componentDidMount
   useEffect(()=>{
   // 需要在 componentDidMount 执行的内容
   }, [])
   
-  useEffect(() => { 
+  useEffect(() => {
   // 在 componentDidMount，以及 count 更改时 componentDidUpdate 执行的内容
-  document.title = `You clicked ${count} times`; 
+  document.title = `You clicked ${count} times`;
   return () => {
     // 需要在 count 更改时 componentDidUpdate（先于 document.title = ... 执行，遵守先清理后更新）
-    // 以及 componentWillUnmount 执行的内容       
+    // 以及 componentWillUnmount 执行的内容
   } // 当函数中 Cleanup 函数会按照在代码中定义的顺序先后执行，与函数本身的特性无关
   }, [count]); // 仅在 count 更改时更新
   ```
@@ -88,12 +88,12 @@ React 生命周期很多人都了解，但通常我们所了解的都是 **单�
 
 - `componentWillUnmount`：相当于 `useEffect` 里面返回的 `cleanup` 函数
 
-  ```
+  ```jsx
   // componentDidMount/componentWillUnmount
   useEffect(()=>{
   // 需要在 componentDidMount 执行的内容
   return function cleanup() {
-    // 需要在 componentWillUnmount 执行的内容      
+    // 需要在 componentWillUnmount 执行的内容
   }
   }, [])
   ```
@@ -209,7 +209,7 @@ React 生命周期很多人都了解，但通常我们所了解的都是 **单�
 
 实际上，**只要父级重新渲染，getDerivedStateFromProps 和 componentWillReceiveProps 都会重新调用，不管 props 有没有变化**。所以，在这两个方法内直接将 props 赋值到 state 是不安全的。
 
-```
+```jsx
 // 子组件
 class PhoneInput extends Component {
   state = { phone: this.props.phone };
@@ -262,7 +262,7 @@ class App extends Component {
         <p>
           Start editing to see some magic happen :)
         </p>
-        <PhoneInput phone='call me!' /> 
+        <PhoneInput phone='call me!' />
         <p>
           This component will re-render every second. Each time it renders, the
           text you type will be reset. This illustrates a derived state
@@ -280,7 +280,7 @@ class App extends Component {
 
 我们也可以使用 **在 props 变化后修改 state**。
 
-```
+```jsx
 class PhoneInput extends Component {
   state = {
     phone: this.props.phone
@@ -303,17 +303,17 @@ class PhoneInput extends Component {
 
 解决方案一：**完全可控的组件**
 
-```
+```jsx
 function PhoneInput(props) {
   return <input onChange={props.onChange} value={props.phone} />;
 }
 ```
 
-**完全由 props 控制，不派生 state**
+完全由 **props** 控制，不派生 **state**
 
 解决方案二：**有 key 的非可控组件**
 
-```
+```jsx
 class PhoneInput extends Component {
   state = { phone: this.props.defaultPhone };
 
@@ -336,9 +336,9 @@ class PhoneInput extends Component {
 
 **误解二**：将 props 的值直接复制给 state
 
-**应避免将 props 的值复制给 state**
+应避免将 **props** 的值复制给 **state**
 
-```
+```jsx
 constructor(props) {
  super(props);
  // 千万不要这样做
