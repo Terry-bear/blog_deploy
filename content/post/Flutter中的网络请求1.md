@@ -196,5 +196,5 @@ class CommonModel {
 
 > 在上述代码中我们通过`fetchPost().then`获取Fluter的返回结果，其实`Future`可以理解为ES5中的Promise。
 >
-> > 转自icoom[CrazyCodeBoy](https://coding.imooc.com/learn/questiondetail/134644.html)
+> > 转自imooc[CrazyCodeBoy](https://coding.imooc.com/learn/questiondetail/134644.html)
 
