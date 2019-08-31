@@ -77,7 +77,7 @@ React 16之后有三个生命周期被废弃(但并未删除)
 
 
 
-![2019-07-31-14-30-17](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e71728047?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![1](/img/2019react/1.png)
 
 
 
@@ -118,7 +118,7 @@ React组件间通信方式:
 
 
 
-![2019-07-31-18-38-37](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e6fd6847c?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![2](/img/2019react/2.png)
 
 
 
@@ -217,36 +217,36 @@ React 16之前 ，`reconcilation` 算法实际上是递归，想要中断递归�
 
 
 
-![img](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e6dc17825?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![3](/img/2019react/3.png)
 
-![img](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e6e745a88?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![4](/img/2019react/4.png)
 
 有图表三个图表，有一个输入框，以及上面的三种模式
 每次**输入东西的时候，就会进去一直在渲染。**为了更好的看到渲染的性能，Dan为我们做了一个表。
 
 我们先看看，同步模式：
 
-![img](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e6e8a5096?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![5](/img/2019react/5.png)
 
-![img](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e705009e6?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![6](/img/2019react/6.png)
 
 
 同步模式下，我们都知道，我们没输入一个字符，React就开始渲染，当React渲染一颗巨大的树的时候，是非常卡的，所以才会有shouldUpdate的出现，在这里Dan也展示了，这种卡！
 
 我们再来看看第二种（Debounced模式）：
 
-![img](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e99680001?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![7](/img/2019react/7.png)
 
-![img](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e997833c6?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![8](/img/2019react/8.png)
 
 
 Debounced模式简单的来说，就是延迟渲染，比如，当你输入完成以后，再开始渲染所有的变化。这么做的坏处就是，至少不会阻塞用户的输入了，但是依然有非常严重的卡顿。
 
 切换到异步模式：
 
-![img](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e99a35e40?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![9](/img/2019react/9.png)
 
-![img](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24e9a323bb1?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![10](/img/2019react/10.png)
 
 
 异步渲染模式就是不阻塞当前线程，继续跑。在视频里可以看到所有的输入，表上都会是原谅色的。
@@ -274,7 +274,7 @@ Debounced模式简单的来说，就是延迟渲染，比如，当你输入完�
 
 
 
-![2019-08-01-17-29-20](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24efade2de0?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![11](/img/2019react/11.png)
 
 
 
@@ -290,7 +290,7 @@ Debounced模式简单的来说，就是延迟渲染，比如，当你输入完�
 
 
 
-![2019-08-01-22-21-51](https://user-gold-cdn.xitu.io/2019/8/23/16cbc24efb408781?imageView2/0/w/1280/h/960/format/webp/ignore-error/1)
+![12](/img/2019react/12.png)
 
 
 
