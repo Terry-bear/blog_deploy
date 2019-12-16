@@ -17,17 +17,16 @@ postMetaInFooter: false
 
 ### 基本类型
 
-![1](/img/kotlinBase/内置类型.png)
+![1](/img/kotlinBase/内置类型.jpg)
 
 ### 类型
 
-![2](/img/kotlinBase/kt类型初步.png)
+![2](/img/kotlinBase/kt类型初步.jpg)
 
 ### 表达式
 
-![3](/img/kotlinBase/kt.png)
+![3](/img/kotlinBase/kt.jpg)
 
 ### 函数进阶
 
-![4](/img/kotlinBase/函数进阶.png)
-
+![4](/img/kotlinBase/函数进阶.jpg)
