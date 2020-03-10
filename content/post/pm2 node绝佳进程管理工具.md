@@ -1,5 +1,5 @@
 ---
-title: “Pm2 node绝佳进程管理工具"
+title: "Pm2 node绝佳进程管理工具"
 date: 2020-02-24T15:29:55+08:00
 draft: false
 keywords: ["javascript"]
@@ -185,8 +185,6 @@ pm2 start location/fileName.js --name appName \
 pm2 [list|ls|status]
 ```
 
-[![img](https://i.imgur.com/WIv3pVR.png)](https://i.imgur.com/WIv3pVR.png)
-
 ## Logs
 
 - 輸出 log
@@ -323,7 +321,7 @@ pm2 start ecosystem.config.js --only yourApp
 
 下面的参数有點多，我们肯定不會一次使用到這麼多的参数，所以可以視專案需求留下我们需要的参数即可
 
-```
+```json
 module.exports = {
     apps: [
         // First application
@@ -367,7 +365,7 @@ module.exports = {
             instance_var: 'NODE_APP_INSTANCE',
             // log 的時間格式
             log_date_format: 'YYYY-MM-DD HH:mm Z',
-            // 錯誤 log 的指定位置
+            // 错误 log 的指定位置
             error_file: '/var/log',
             // 正常輸出 log 的指定位置
             out_file: '/var/log',
@@ -702,9 +700,9 @@ pm2 start app.js --no-autorestart # 不自动重启
   pm2 completion install
   ```
 
-## 疑難雜症
+## 疑难杂症
 
-### 遇到錯誤 `Error: ENOENT: no such file or directory, uv_cwd`
+### 遇到错误 `Error: ENOENT: no such file or directory, uv_cwd`
 
 意思是說， `pm2` 的工作目錄資料夾不存在，所謂的工作目錄資料夾就是我们第一次启动 `pm2` 的位置。很可能是我们启动之后，就不小心把它删了，如果要尋找工作目錄資料夾在哪，可以使用下面的 command
 
