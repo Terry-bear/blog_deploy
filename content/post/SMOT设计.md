@@ -15,5 +15,5 @@ postMetaInFooter: false
 
 <!--more-->
 
-![BFF架构规划 SMOT](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/BFF架构规划%20SMOT.png)
+![BFF架构规划 SMOT](http://img.elixir-zh.cn/uPic/BFF架构规划%20SMOT.png)
 
