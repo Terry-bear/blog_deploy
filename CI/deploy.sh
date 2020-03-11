@@ -5,7 +5,8 @@ tar xvf ~/.ssh/secrets.tar -C ~/.ssh
 chmod 600 ~/.ssh/server.pub
 chmod 600 ~/.ssh/id_rsa
 pwd
-echo $IP ~/.ssh/server.pub >> $HOME/.ssh/known_hosts
+key=$IP" "$(cat ~/.ssh/server.pub)
+echo $key  >> $HOME/.ssh/known_hosts
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_rsa
 git config --global user.name "terryzh"
