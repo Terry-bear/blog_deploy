@@ -25,7 +25,7 @@ postMetaInFooter: false
 
 
 
-![1-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/1-vuecomp.png)
+![1-vuecomp](http://img.elixir-zh.cn/uPic/1-vuecomp.png)
 
 
 
@@ -39,7 +39,7 @@ postMetaInFooter: false
 
 
 
-![2-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/2-vuecomp.png)
+![2-vuecomp](http://img.elixir-zh.cn/uPic/2-vuecomp.png)
 
 
 
@@ -270,7 +270,7 @@ Vue.directive('title', {
 
 
 
-![3-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/3-vuecomp.png)
+![3-vuecomp](http://img.elixir-zh.cn/uPic/3-vuecomp.png)
 
 
 
@@ -305,7 +305,7 @@ export default class Hooks extends Vue {
 
 
 
-<img src="http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/4-vuecomp.png" alt="4-vuecomp" style="zoom:25%;" />
+<img src="http://img.elixir-zh.cn/uPic/4-vuecomp.png" alt="4-vuecomp" style="zoom:25%;" />
 
 
 
@@ -387,7 +387,7 @@ export default createComponent({
 
 
 
-![5-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/5-vuecomp.png)
+![5-vuecomp](http://img.elixir-zh.cn/uPic/5-vuecomp.png)
 
 
 
@@ -463,7 +463,7 @@ export default createComponent({
 
 
 
-![6-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/6-vuecomp.png)
+![6-vuecomp](http://img.elixir-zh.cn/uPic/6-vuecomp.png)
 
 
 
@@ -558,7 +558,7 @@ export default createComponent({
 
 
 
-![7-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/7-vuecomp.png)
+![7-vuecomp](http://img.elixir-zh.cn/uPic/7-vuecomp.png)
 
 
 
@@ -566,7 +566,7 @@ export default createComponent({
 
 
 
-![8-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/8-vuecomp.png)
+![8-vuecomp](http://img.elixir-zh.cn/uPic/8-vuecomp.png)
 
 
 

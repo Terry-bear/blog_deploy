@@ -21,7 +21,7 @@ postMetaInFooter: false
 
 
 
-![cors1](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors1.png)
+![cors1](http://img.elixir-zh.cn/uPic/cors1.png)
 
 两者概念完全不同，另外常常我们也会看到 XSS ，这里一起介绍：
 
@@ -60,7 +60,7 @@ postMetaInFooter: false
 
 
 
-![cors2](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors2.png)
+![cors2](http://img.elixir-zh.cn/uPic/cors2.png)
 
 
 
@@ -70,7 +70,7 @@ postMetaInFooter: false
 
 
 
-![cors3](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors3.png)
+![cors3](http://img.elixir-zh.cn/uPic/cors3.png)
 
 
 
@@ -162,7 +162,7 @@ Connection: Keep-Alive
 
 
 
-![cors4](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors4.png)
+![cors4](http://img.elixir-zh.cn/uPic/cors4.png)
 
 
 
@@ -304,7 +304,7 @@ XSS 攻击，一般是指攻击者通过在网页中注入恶意脚本，当用�
 
 
 
-![cors5](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors5.png)
+![cors5](http://img.elixir-zh.cn/uPic/cors5.png)
 
 
 

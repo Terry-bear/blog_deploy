@@ -45,7 +45,7 @@ var instance = new SubType();
 console.log(instance.getSuperValue()); // true
 ```
 
-![68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f31302f33302f313636633263303130376664383063373f773d38303026683d34313726663d706e6726733d313537383838](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f31302f33302f313636633263303130376664383063373f773d38303026683d34313726663d706e6726733d313537383838.png)
+![68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f31302f33302f313636633263303130376664383063373f773d38303026683d34313726663d706e6726733d313537383838](http://img.elixir-zh.cn/uPic/68747470733a2f2f757365722d676f6c642d63646e2e786974752e696f2f323031382f31302f33302f313636633263303130376664383063373f773d38303026683d34313726663d706e6726733d313537383838.png)
 
 原型链方案存在的缺点：多个实例对引用类型的操作会被篡改。
 
@@ -134,7 +134,7 @@ instance2.sayName(); //"Greg";
 instance2.sayAge(); //27
 ```
 
-![js 八中继承方案2](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/js%20八中继承方案2.png)
+![js 八中继承方案2](http://img.elixir-zh.cn/uPic/js%20八中继承方案2.png)
 
 缺点：
 
@@ -252,7 +252,7 @@ instance1.colors.push("2"); // ["red", "blue", "green", "2"]
 instance2.colors.push("3"); // ["red", "blue", "green", "3"]
 ```
 
-![js 八中继承方案3](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/js%20八中继承方案3.png)
+![js 八中继承方案3](http://img.elixir-zh.cn/uPic/js%20八中继承方案3.png)
 
 这个例子的高效率体现在它只调用了一次`SuperType` 构造函数，并且因此避免了在`SubType.prototype` 上创建不必要的、多余的属性。于此同时，原型链还能保持不变；因此，还能够正常使用`instanceof` 和`isPrototypeOf()`
 

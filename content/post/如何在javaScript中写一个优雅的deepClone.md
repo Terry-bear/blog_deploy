@@ -37,7 +37,7 @@ postMetaInFooter: false
 
 ## 深拷贝和浅拷贝的定义
 
-![1](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/1.png)
+![1](http://img.elixir-zh.cn/uPic/1.png)
 
 你只要少搞明白`拷贝`和`赋值`的区别。
 
@@ -47,7 +47,7 @@ postMetaInFooter: false
 
 
 
-![2](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/2.png)
+![2](http://img.elixir-zh.cn/uPic/2.png)
 
 
 
@@ -55,7 +55,7 @@ postMetaInFooter: false
 
 深拷贝：
 
-![3-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/3-deepclone.png)
+![3-deepclone](http://img.elixir-zh.cn/uPic/3-deepclone.png)
 
 
 
@@ -136,7 +136,7 @@ const target = {
 
 
 
-![4-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/4-deepclone.png)
+![4-deepclone](http://img.elixir-zh.cn/uPic/4-deepclone.png)
 
 
 
@@ -177,7 +177,7 @@ const target = {
 
 
 
-![5-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/5-deepclone.png)
+![5-deepclone](http://img.elixir-zh.cn/uPic/5-deepclone.png)
 
 
 
@@ -201,7 +201,7 @@ target.target = target;
 
 可以看到下面的结果：
 
-![6-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/6-deepclone.png)
+![6-deepclone](http://img.elixir-zh.cn/uPic/6-deepclone.png)
 
 
 
@@ -240,7 +240,7 @@ function clone(target, map = new Map()) {
 
 
 
-![7-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/7-deepclone.png)
+![7-deepclone](http://img.elixir-zh.cn/uPic/7-deepclone.png)
 
 
 
@@ -303,7 +303,7 @@ obj = null;
 
 
 
-![8-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/8-deepclone.png)
+![8-deepclone](http://img.elixir-zh.cn/uPic/8-deepclone.png)
 
 
 
@@ -378,7 +378,7 @@ console.timeEnd();
 
 
 
-![9-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/9-deepclone.png)
+![9-deepclone](http://img.elixir-zh.cn/uPic/9-deepclone.png)
 
 
 
@@ -554,7 +554,7 @@ const target = {
 
 
 
-![10-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/10-deepclone.png)
+![10-deepclone](http://img.elixir-zh.cn/uPic/10-deepclone.png)
 
 
 
@@ -696,7 +696,7 @@ const target = {
 
 执行结果：
 
-![11-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/11-deepclone.png)
+![11-deepclone](http://img.elixir-zh.cn/uPic/11-deepclone.png)
 
 
 
@@ -708,7 +708,7 @@ const target = {
 
 
 
-![12-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/12-deepclone.png)
+![12-deepclone](http://img.elixir-zh.cn/uPic/12-deepclone.png)
 
 
 
@@ -753,5 +753,3 @@ const target = {
 - 理解深浅拷贝的真正意义
 - 能整我深拷贝的各个要点，对问题进行深入分析
 - 可以手写一个比较完整的深拷贝
-
-
