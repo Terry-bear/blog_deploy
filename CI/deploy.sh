@@ -5,11 +5,12 @@ tar xvf ~/.ssh/secrets.tar -C ~/.ssh
 chmod 600 ~/.ssh/server.pub
 chmod 600 ~/.ssh/id_rsa
 pwd
+echo ~/.ssh/server.pub >> $HOME/.ssh/known_hosts
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_rsa
 git config --global user.name "terryzh"
 git config --global user.email "496971418@qq.com"
-git clone git@github.com:t496971418/my_blog.git
+git clone git@github.com:Terry-bear/my_blog.git
 cd my_blog
 cp -R ../public/* .
 git add .

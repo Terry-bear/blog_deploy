@@ -10,7 +10,6 @@ addons:
   - "$IP"
   - github.com
 install:
-- echo $IP >> $HOME/.ssh/known_hosts
 - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz
 - tar -xzvf hugo_0.54.0_Linux-64bit.tar.gz
 - sudo apt-get install sshpass
