@@ -7,7 +7,7 @@ git:
   depth: 10
 addons:
   ssh_known_hosts:
-  - "$IP"
+  - 39.104.123.222
   - github.com
 install:
 - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz

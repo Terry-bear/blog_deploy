@@ -5,8 +5,6 @@ tar xvf ~/.ssh/secrets.tar -C ~/.ssh
 chmod 600 ~/.ssh/server.pub
 chmod 600 ~/.ssh/id_rsa
 pwd
-key=$IP" "$(cat ~/.ssh/server.pub)
-echo $key  >> $HOME/.ssh/known_hosts
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_rsa
 git config --global user.name "terryzh"
@@ -21,5 +19,5 @@ git push origin master
 # upload master server
 
 cd ..
-sshpass -p $SPW scp -o stricthostkeychecking=no -r ./public/* root@$IP:/usr/local/nginx/html
+sshpass -p $SPW scp -o stricthostkeychecking=no -r ./public/* root@39.104.123.222:/usr/local/nginx/html
 exit 0
