@@ -1,7 +1,7 @@
 ---
 title: “VUE3之 compositionAPI"
 date: 2019-11-27T15:28:21+08:00
-lastmod: 2019-11-27T15:28:21+08:00
+lastmod: 2020-03-12T01:28:21+08:00
 draft: false
 keywords: ["javascript"]
 description: ""
@@ -25,7 +25,7 @@ postMetaInFooter: false
 
 
 
-![img](/img/vue3composition/1.png)
+![1-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/1-vuecomp.png)
 
 
 
@@ -39,7 +39,7 @@ postMetaInFooter: false
 
 
 
-![img](/img/vue3composition/2.png)
+![2-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/2-vuecomp.png)
 
 
 
@@ -270,7 +270,7 @@ Vue.directive('title', {
 
 
 
-![img](/img/vue3composition/3.png)
+![3-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/3-vuecomp.png)
 
 
 
@@ -305,7 +305,7 @@ export default class Hooks extends Vue {
 
 
 
-![img](/img/vue3composition/4.png)
+<img src="http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/4-vuecomp.png" alt="4-vuecomp" style="zoom:25%;" />
 
 
 
@@ -387,7 +387,7 @@ export default createComponent({
 
 
 
-![img](/img/vue3composition/5.png)
+![5-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/5-vuecomp.png)
 
 
 
@@ -463,7 +463,7 @@ export default createComponent({
 
 
 
-![img](/img/vue3composition/6.png)
+![6-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/6-vuecomp.png)
 
 
 
@@ -558,7 +558,7 @@ export default createComponent({
 
 
 
-![img](/img/vue3composition/7.png)
+![7-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/7-vuecomp.png)
 
 
 
@@ -566,7 +566,7 @@ export default createComponent({
 
 
 
-![img](/img/vue3composition/8.png)
+![8-vuecomp](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/8-vuecomp.png)
 
 
 
@@ -724,4 +724,3 @@ export default createComponent({
 ```html
  <user-select :user.sync="user" />
 ```
-

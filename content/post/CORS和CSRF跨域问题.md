@@ -1,7 +1,7 @@
 ---
 title: "CORS和CSRF跨域问题"
 date: 2019-11-22T17:19:23+08:00
-lastmod: 2019-11-22T17:19:23+08:00
+lastmod: 2020-03-12T01:49:23+08:00
 draft: false
 keywords: ["javascript"]
 description: ""
@@ -19,9 +19,9 @@ postMetaInFooter: false
 
 先看下图：
 
-![CORS 和 CSRF 区别](/img/cors/cors1.png)
 
 
+![cors1](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors1.png)
 
 两者概念完全不同，另外常常我们也会看到 XSS ，这里一起介绍：
 
@@ -60,7 +60,7 @@ postMetaInFooter: false
 
 
 
-![简单请求的 CORS 流程](/img/cors/cors2.png)
+![cors2](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors2.png)
 
 
 
@@ -70,7 +70,7 @@ postMetaInFooter: false
 
 
 
-![简单请求的 CORS 流程](/img/cors/cors3.png)
+![cors3](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors3.png)
 
 
 
@@ -162,7 +162,7 @@ Connection: Keep-Alive
 
 
 
-![CSRF 攻击流程](/img/cors/cors4.png)
+![cors4](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors4.png)
 
 
 
@@ -304,7 +304,7 @@ XSS 攻击，一般是指攻击者通过在网页中注入恶意脚本，当用�
 
 
 
-![XSS 分类](/img/cors/cors5.png)
+![cors5](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/cors5.png)
 
 
 
@@ -391,9 +391,3 @@ Content-Security-Policy: script-src 'self';
 - 页面子内容，如 ``、``： 必须使用HTTPS协议加载
 - 其他资源： 没有限制
 - 启用后，不符合 CSP 的外部资源就会被阻止加载。
-
-
-
-> 作者：pingan8787
-
-> 链接：https://juejin.im/post/5dd1211c51882510c70668ad

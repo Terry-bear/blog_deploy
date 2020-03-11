@@ -1,7 +1,7 @@
 ---
 title: "如何在javaScript中写一个优雅的deepClone"
 date: 2019-09-02T14:13:13+08:00
-lastmod: 2019-09-02T14:13:13+08:00
+lastmod: 2020-03-12T02:13:13+08:00
 draft: false
 keywords: ["javascript"]
 description: ""
@@ -37,7 +37,7 @@ postMetaInFooter: false
 
 ## 深拷贝和浅拷贝的定义
 
-![1](/img/deepClone/1.png)
+![1](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/1.png)
 
 你只要少搞明白`拷贝`和`赋值`的区别。
 
@@ -47,7 +47,7 @@ postMetaInFooter: false
 
 
 
-![2](/img/deepClone/2.png)
+![2](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/2.png)
 
 
 
@@ -55,9 +55,9 @@ postMetaInFooter: false
 
 深拷贝：
 
+![3-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/3-deepclone.png)
 
 
-![3](/img/deepClone/3.png)
 
 
 
@@ -136,7 +136,7 @@ const target = {
 
 
 
-![4](/img/deepClone/4.png)
+![4-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/4-deepclone.png)
 
 
 
@@ -177,7 +177,7 @@ const target = {
 
 
 
-![5](/img/deepClone/5.png)
+![5-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/5-deepclone.png)
 
 
 
@@ -201,9 +201,7 @@ target.target = target;
 
 可以看到下面的结果：
 
-
-
-![6](/img/deepClone/6.png)
+![6-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/6-deepclone.png)
 
 
 
@@ -242,7 +240,7 @@ function clone(target, map = new Map()) {
 
 
 
-![7](/img/deepClone/7.png)
+![7-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/7-deepclone.png)
 
 
 
@@ -305,7 +303,7 @@ obj = null;
 
 
 
-![8](/img/deepClone/8.png)
+![8-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/8-deepclone.png)
 
 
 
@@ -380,7 +378,7 @@ console.timeEnd();
 
 
 
-![9](/img/deepClone/9.png)
+![9-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/9-deepclone.png)
 
 
 
@@ -556,7 +554,7 @@ const target = {
 
 
 
-![10](/img/deepClone/10.png)
+![10-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/10-deepclone.png)
 
 
 
@@ -698,9 +696,9 @@ const target = {
 
 执行结果：
 
+![11-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/11-deepclone.png)
 
 
-![11](/img/deepClone/11.png)
 
 
 
@@ -710,7 +708,7 @@ const target = {
 
 
 
-![12](/img/deepClone/12.png)
+![12-deepclone](http://terryzhblog.s3-cn-south-1.qiniucs.com/uPic/12-deepclone.png)
 
 
 
@@ -757,7 +755,3 @@ const target = {
 - 可以手写一个比较完整的深拷贝
 
 
-
-> 作者：ConardLi [链接](https://juejin.im/post/5d68eac8e51d4561c67840c4)
-
-> 来源：掘金著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
